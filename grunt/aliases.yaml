@@ -1,0 +1,41 @@
+default:
+  - 'concurrent:first'
+  - 'concurrent:second'
+  - 'concurrent:third'
+  - 'concurrent:fourth'
+  - 'concurrent:fifth'
+
+dev:
+  - 'concurrent:firstDevelopment'
+  - 'concurrent:secondDevelopment'
+  - 'concurrent:thirdDevelopment'
+  - 'concurrent:fourthDevelopment'
+  - 'concurrent:fifthDevelopment'
+
+updateDependencies:
+  - 'devUpdate'
+
+deploy:
+  - 'prompt:deployPrompt'
+  - 'sftp:deploy'
+  - 'sshexec:deploy'
+  - 'sshexec:deployWP'
+  - 'notify:deploy'
+
+init:
+  - 'shell:init'
+
+build:
+  - 'shell:build'
+
+syncDown:
+  - 'prompt:syncDown'
+  - 'shell:syncDown'
+
+syncUp:
+  - 'prompt:syncUp'
+  - 'shell:syncUp'
+
+rollback:
+  - 'prompt:rollback'
+  - 'sshexec:rollback'

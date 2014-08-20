@@ -1,0 +1,20 @@
+{
+	"name": "perfect-deploy",
+	"version": "0.0.7",
+	"authors": [
+		"Kolle Rebbe"
+	],
+	"dependencies": {
+		"modernizr": "*",
+		"jquery": "*",
+		"bootstrap-sass": "*",
+		"requirejs": "*"
+	},
+	"exportsOverride": {
+		"bootstrap-sass": {
+			"js": "js/*.js",
+			"scss": "lib/*.scss",
+			"img": "img/*.png"
+		}
+	}
+}

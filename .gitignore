@@ -1,0 +1,16 @@
+secret.json
+build/
+vendor/
+backups/
+htdocs/app/themes/theme/assets/src/bower_components/
+bower_components/
+htdocs/app/themes/theme/assets/dist/
+.sass-cache
+npm-debug.log
+node_modules
+htdocs/app/plugins/*
+htdocs/wp/
+htdocs/wp-config.php
+htdocs/.htaccess
+htdocs/app/uploads/
+.DS_Store

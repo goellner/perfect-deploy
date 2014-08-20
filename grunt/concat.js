@@ -1,0 +1,46 @@
+/**
+ * https://github.com/gruntjs/grunt-contrib-concat
+ *
+ * Concatenates javascript files. Except for the Modernizr-build all javascript files
+ * will be concatenated into a single javascript file.
+ *
+ * Modernizr is loaded in the head-section and is seperately optimized by modernizr-task.
+ *
+ * jQuery et. al. should be loaded via CDN. A fallback version is seperately downloaded via
+ * bower and optimized via uglify. It therefore does not need to be included here.
+ */
+
+module.exports = {
+	options: {
+			separator: ';'
+		},
+		all: {
+			src : [
+
+				//bootstrap plugins, please disable those you don't need:
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/affix.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/alert.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/button.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/carousel.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/collapse.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/dropdown.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/modal.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/popover.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/scrollspy.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/tab.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/tooltip.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/transition.js',
+
+				//vendor javascript, please add your vendor libraries
+				'<%= package.basedir %>/assets/src/js/vendor/*.js',
+
+				//additional javascript plugins. Best put them in a plugin directory and reference here...
+
+				//basically the _main.js file (better put project specific javascript classes in subfolder)
+				'<%= package.basedir %>/assets/src/js/*.js',
+
+			],
+			//scripts.js will be get minified by uglify-task.
+			dest : '<%= package.basedir %>/assets/dist/js/scripts.js'
+		}
+};
