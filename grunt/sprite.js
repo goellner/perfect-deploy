@@ -11,7 +11,7 @@ module.exports = {
 	dist: {
 		src: '<%= package.basedir %>/assets/src/img/sprites/*.png',
 		destImg: '<%= package.basedir %>/assets/dist/img/spritesheet.png',
-		destCSS: '<%= package.basedir %>/assets/src/scss/sprites.scss',
+		destCSS: '<%= package.basedir %>/assets/src/sass/sprites.scss',
 		padding: 2,
 		cssFormat: 'scss',
 		cssOpts: {
@@ -21,7 +21,7 @@ module.exports = {
 	distHD: {
 		src: '<%= package.basedir %>/assets/src/img/sprites@2x/*.png',
 		destImg: '<%= package.basedir %>/assets/dist/img/spritesheet@2x.png',
-		destCSS: '<%= package.basedir %>/assets/src/scss/sprites@2x.scss',
+		destCSS: '<%= package.basedir %>/assets/src/sass/sprites@2x.scss',
 		padding: 2,
 		cssFormat: 'scss',
 		cssOpts: {

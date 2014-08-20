@@ -18,18 +18,18 @@ module.exports = {
 			src : [
 
 				//bootstrap plugins, please disable those you don't need:
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/affix.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/alert.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/button.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/carousel.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/collapse.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/dropdown.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/modal.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/popover.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/scrollspy.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/tab.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/tooltip.js',
-				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/bootstrap/transition.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/affix.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/alert.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/button.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/carousel.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/collapse.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/dropdown.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/modal.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/popover.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/scrollspy.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/tab.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/tooltip.js',
+				'<%= package.basedir %>/assets/src/bower_components/bootstrap-sass/js/transition.js',
 
 				//vendor javascript, please add your vendor libraries
 				'<%= package.basedir %>/assets/src/js/vendor/*.js',

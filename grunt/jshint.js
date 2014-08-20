@@ -13,9 +13,11 @@ module.exports = {
 		'Gruntfile.js',
 
 		//main project file
-		'<%= package.basedir %>/assets/src/js/*.js',
 
+		'<%= package.basedir %>/assets/src/js/*.js',
+		'!<%= package.basedir %>/assets/src/js/scripts.min.js',
 		'<%= package.basedir %>/assets/src/tests/*.js',
+
 
 		//add more files here... or hint every javascript file with /js/**/*.js (this will often not work...)
 	]
