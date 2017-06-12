@@ -404,7 +404,7 @@ Javascript files are hinted against **.jshintrc**. Edit this file to set hinting
 
 #### Unit-Testing
 
-A rudimentary test is set up in assets/src/tests. Use <a href="http://visionmedia.github.io/mocha/">Mocha</a> and the <a href="http://chaijs.com/">Chai Assertion Library</a> to define your tests.
+A rudimentary test is set up in assets/src/tests. Use <a href="http://mochajs.org/">Mocha</a> and the <a href="http://chaijs.com/">Chai Assertion Library</a> to define your tests.
 
 
 ===
